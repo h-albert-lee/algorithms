@@ -1,4 +1,4 @@
-
+#k번째 약수
 
 n, k= map(int, input().split())
 
