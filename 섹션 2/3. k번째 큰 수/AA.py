@@ -1,12 +1,25 @@
+#import sys
+#sys.stdin=open("input.txt", "r")
+
 n, k= map(int, input().split())
 N = list(map(int, input().split()))
-ans_list = []
+#n = 10
+#k = 3
+#N = [13,15,34,23,45,65,33,11,26,42]
+
+N.sort(reverse=True)
+list = []
 for i in range(n):
-    for k in range(n):
-        for j in range(n):
-            ans = N[i] + N[k] + N[j]
-            ans_list.append(ans)
-ans_list.sort()
-ans_set = set(ans_list)
-ans = int(ans_set[k-1])
+    for j in range(1,n-1):
+        for k in range(1,n-2):
+            each = N[i] + N[i+j] + N[i+j+k]
+            list.append(each)
+            if len(list) > int(k):
+                break
+        if len(list) > int(k):
+            break
+    if len(list) > int(k):
+        break
+
+ans = list[k-1]
 print(ans)
