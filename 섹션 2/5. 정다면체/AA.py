@@ -1,4 +1,5 @@
 #정다면체
+#solved
 
 n, k= map(int, input().split())
 #n = 4
