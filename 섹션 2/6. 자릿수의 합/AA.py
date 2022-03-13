@@ -1,3 +1,6 @@
+#자릿수의 합
+#solved
+
 n= map(int, input())
 K = list(map(int, input().split()))
 
