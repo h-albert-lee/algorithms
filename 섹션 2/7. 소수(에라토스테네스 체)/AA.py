@@ -1,3 +1,5 @@
+#소수
+#Time Limit Exceed
 n= int(input())
 
 def sosu(n):
