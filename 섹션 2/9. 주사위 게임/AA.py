@@ -1,4 +1,5 @@
 #주사위 게임
+#solved
 
 n= int(input())
 
