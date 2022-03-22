@@ -1,14 +1,11 @@
 #두 리스트 합치기
-#time limit exceed
+#solved
 
 n = int(input())
 N = list(map(int, input().split()))
 m = int(input())
 M = list(map(int, input().split()))
-#n = 3
-#N = [1,3,5]
-#m = 5
-#M = [2,3,6,7,9]
+
 
 #pointer
 p1 = 0
