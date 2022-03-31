@@ -1,6 +1,6 @@
 #격자판 회문 수
 #time limit exceed
-A = [list(map(int, input().split())) for _ in range(9)]
+A = [list(map(int, input().split())) for _ in range(7)]
 '''
 A = [[2,4,1,5,3,2,6]
     , [3,5,1,8,7,1,7]
@@ -18,23 +18,14 @@ def check_hwemun(test):
             Ans = False
     return Ans
 
+
 cnt = 0
 for i in range(3):
     for j in range(7):
-        check = []
-        check.append(A[i][j])
-        check.append(A[i+1][j])
-        check.append(A[i+2][j])
-        check.append(A[i+3][j])
-        check.append(A[i+4][j])
+        check = [A[i][j],A[i+1][j],A[i+2][j],A[i+3][j],A[i+4][j]]
         if check_hwemun(check) == True:
             cnt += 1
-        check = []
-        check.append(A[j][i])
-        check.append(A[j][i+1])
-        check.append(A[j][i+2])
-        check.append(A[j][i+3])
-        check.append(A[j][i+4])
+        check = [A[j][i],A[j][i+1],A[j][i+2],A[j][i+3],A[j][i+4]]
         if check_hwemun(check) == True:
             cnt += 1
 print(cnt)
