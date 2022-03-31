@@ -1,5 +1,5 @@
 #격자판 회문 수
-#time limit exceed
+#solved
 A = [list(map(int, input().split())) for _ in range(7)]
 '''
 A = [[2,4,1,5,3,2,6]
