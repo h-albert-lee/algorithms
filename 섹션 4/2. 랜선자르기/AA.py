@@ -1,25 +1,34 @@
 #랜선 자르기
 #unsolved
 
-n, k = map(int,input().split())
+k, n = map(int,input().split())
 A = []
-for i in range(n):
+for i in range(k):
     tmp=int(input())
     A.append(tmp)
-'''
-n = 4
-k = 11
-A = [802,743,457,539]
-'''
-max = 0
-iter = min(A)
-for i in range(1,iter):
-    divid_list = []
-    for each in A:
-        divid = each // i
-        divid_list.append(divid)
-    if sum(divid_list) >= 11:
-        if i >= max:
-            max = i
 
-print(max)
+'''
+k = 4
+n = 11
+A = [802,743,457,539]
+large = 802
+'''
+def checker(len, list):
+    cnt = 0
+    for each in list:
+        cnt += (each//len)
+    return cnt
+
+small = 1
+big = max(A)
+ans = 0
+
+while small <= big:
+    len = (small + big) // 2
+    if checker(len, A) >= n:
+        ans = len
+        small = len +1
+    else:
+        big = len - 1
+
+print(ans)
