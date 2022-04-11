@@ -1,5 +1,5 @@
 #랜선 자르기
-#unsolved
+#solved(sol)
 
 k, n = map(int,input().split())
 A = []
