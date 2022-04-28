@@ -1,4 +1,5 @@
 #교육과정설계
+#solved(80)
 
 from collections import deque
 
