@@ -1,4 +1,5 @@
 #응급실
+#time limit
 from collections import deque
 
 
