@@ -1,22 +1,16 @@
 #단어찾기
+#unsolved
 
-n = input()
-words = {}
-for _ in range(n):
-    word = input()
-    words.add(word)
+n = int(input())
+words = dict()
+for i in range(n):
+    k = input()
+    words[k] = 0
+for i in range(n-1):
+    k = input()
+    words[k] = 1
 
-test = {}
-for _ in range(n-1):
-    tes = input()
-    test.add(tes)
-
-words = list(words)
-test = list(test)
-
-for _ in range(len(words)):
-    a = words.pop(0)
-    b = test.pop(0)
-    if a != b:
-        print(a)
+for i, v in words.items():
+    if v == 0:
+        print(i)
         break
