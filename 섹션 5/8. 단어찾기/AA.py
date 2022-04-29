@@ -1,5 +1,5 @@
 #단어찾기
-#unsolved
+#solved(sol)
 
 n = int(input())
 words = dict()
