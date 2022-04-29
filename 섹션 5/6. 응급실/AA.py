@@ -5,22 +5,17 @@ from collections import deque
 
 n, m = map(int, input().split())
 A = list(map(int,input().split()))
-'''
-n = 5
-m = 2
-A = [60,50,70,80,90]
-'''
+
+A = [(index, val) for index, val in enumerate(A)]
 A = deque(A)
 cnt = 0
-ans = A[m]
 
 while A:
-    k = A.popleft()
-    if k > max(A):
-        cnt += 1
-        if k == ans:
-            break
+    check = A.popleft()
+    if any(check[1]< x[1] for x in A):
+        A.append(check)
     else:
-        A.append(k)
-
-print(cnt)
+        cnt += 1
+        if check[0] == m:
+            print(cnt)
+            break
