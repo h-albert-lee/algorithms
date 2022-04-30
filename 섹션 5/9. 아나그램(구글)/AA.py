@@ -1,4 +1,5 @@
 #아나그램
+#solved
 
 a=str(input())
 b=str(input())
