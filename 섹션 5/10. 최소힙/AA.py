@@ -1,5 +1,5 @@
 #최소힙
-#unsolved
+#solved(sol)
 import heapq as hq
 
 a = []
