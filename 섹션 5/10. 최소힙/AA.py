@@ -1,13 +1,17 @@
 #최소힙
 #unsolved
+import heapq as hq
 
-A = []
+a = []
+
 while True:
-    s = int(input())
-    if s == 0:
-        print(min(A))
-        A = []
-    elif s == -1:
+    n = int(input())
+    if n == -1:
         break
+    elif n == 0:
+        if len(a) == 0:
+            print(-1)
+        else:
+            print(hq.heappop(a))
     else:
-        A.append(s)
+        hq.heappush(a, n)
