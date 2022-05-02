@@ -2,11 +2,11 @@
 #solved
 def DFS(x):
     if x == 0:
-        pass
+        return
     else:
         DFS(x//2)
-        print(x%2, end = '')
+        print(x%2, end='')
 
-
-k = int(input())
-DFS(k)
+if __name__=="__main__":
+    k = int(input())
+    DFS(k)
