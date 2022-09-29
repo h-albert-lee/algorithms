@@ -4,9 +4,10 @@
 N = int(input())
 lst = list(map(int, input().split()))
 '''
-N = 10
-lst = [45,73,66,87,92,67,75,79,75,80]
+N = 15
+lst = [12,34,17,6,11,15,27,42,39,31,25,36,35,25,17]
 '''
+
 mean = round(sum(lst)/len(lst))
 
 diff_list = []
@@ -27,7 +28,6 @@ for i, j in enumerate(lst):
 res_list = []
 res_list_index =[]
 max = 0
-print(ans_list)
 for index, value in enumerate(ans_list):
     if value > max:
         max = value
