@@ -1,5 +1,5 @@
 #대표값 again
-#wrong answer
+#success
 
 N = int(input())
 lst = list(map(int, input().split()))
