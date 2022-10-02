@@ -11,7 +11,7 @@ sosu = []
 while True:
     a = lst.pop(0)
     sosu.append(a)
-    iter_num = 20//a
+    iter_num = N//a
     for i in range(2,iter_num+1):
         if a*i in lst:
             lst.remove(a*i)

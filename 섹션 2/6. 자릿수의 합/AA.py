@@ -1,4 +1,5 @@
 #자릿수의 합
+#success
 
 n = int(input())
 lst = list(map(int, input().split()))
