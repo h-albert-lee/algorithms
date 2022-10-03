@@ -1,5 +1,5 @@
 #회문 문자열 검사
-#success
+#success 
 
 n = int(input())
 
