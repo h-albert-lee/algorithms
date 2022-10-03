@@ -1,23 +1,20 @@
 #회문 문자열 검사
-#solved
+#success
 
-n= int(input())
+n = int(input())
 
-def takereverse(input):
-    inputs = str(input)
-    length = len(input)-1
-    reversed = ''
-    for each in range(length,-1,-1):
-        reversed = reversed + inputs[each]
-    return reversed
+def test(x):
+    x = str(x).lower()
+    mid = len(x)//2
+    ans = True
+    for i in range(0,mid):
+        if x[0+i] != x[-1-i]:
+            ans = False
+    return ans
 
-for i in range(1,n+1):
-    words = str(input())
-    words = words.lower()
-    reversed_words = takereverse(words)
-    ans = ''
-    if words == reversed_words:
-        ans = 'YES'
+for i in range(1, n+1):
+    word = str(input())
+    if test(word) == True:
+        print('#%s YES' % (i))
     else:
-        ans = 'NO'
-    print('#%d %s' %(i, ans))
+        print('#%s NO' %(i))
