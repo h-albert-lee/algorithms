@@ -8,6 +8,11 @@
 N = int(input)
 k = int(input)
 '''
-
-N = 10000
-k = 5
+lst = [1,2,3,4,5,6,7,8,9]
+for i in range(0, len(lst)-1):
+    print(i)
+    print('lst는', lst[i])
+print('----------------------')
+for i in range(len(lst)-1,0,-1):
+    print(i)
+    print('lst는', lst[i])
