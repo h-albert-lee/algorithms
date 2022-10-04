@@ -1,4 +1,6 @@
 #카드 역배치
+#success
+
 A = list(range(1,21))
 
 def reverse(x):
