@@ -1,9 +1,11 @@
 #2차원 배열의 합
+#success
+
 '''
 n, m = map(int, input().split())
-a = []
-for i in range(N):
-    a.append(list(map(int, input().split())))
+A = []
+for i in range(n):
+    A.append(list(map(int, input().split())))
 '''
 n = 2
 m = 3
