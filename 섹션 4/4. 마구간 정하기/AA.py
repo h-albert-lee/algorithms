@@ -1,4 +1,6 @@
 #마구간 정하기
+#강의 듣자!
+
 '''
 m, n = map(int, input().split())
 A = []
