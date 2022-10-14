@@ -1,4 +1,5 @@
 #응급실
+#success
 
 n, m = map(int, input().split())
 A = list(map(int, input().split()))
