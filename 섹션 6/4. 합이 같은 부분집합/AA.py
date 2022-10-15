@@ -1,4 +1,6 @@
 #합이 같은 부분집합
+#success
+
 import sys
 
 def DFS(L, sum):
